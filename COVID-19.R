@@ -4,10 +4,10 @@
 # The analysis focuses on death percentages, median age, hospital beds per thousand, and vaccination rates over time.
 
 # Libraries Used
-# readr: For reading CSV files.
-# dplyr: For data manipulation.
-# ggplot2: For data visualization.
-# tidyverse: For a collection of R packages designed for data science.
+  # readr: For reading CSV files.
+  # dplyr: For data manipulation.
+  # ggplot2: For data visualization.
+  # tidyverse: For a collection of R packages designed for data science.
 
 # Install required libraries (uncomment and run if not already installed)
 # install.packages(c("readr", "dplyr", "ggplot2", "tidyverse"))
@@ -94,18 +94,19 @@ korea_us_data %>%
        color = "Location")
 
 # Insights
+
 # Differences in Healthcare Systems and Pandemic Response:
-# Healthcare Infrastructure: South Korea has a robust healthcare system with universal coverage, 
-#   while the U.S. has a more fragmented system with varying levels of access to healthcare.
-# Pandemic Response: South Korea implemented aggressive testing, contact tracing, and isolation measures early on, 
-#   whereas the U.S. faced challenges with testing capacity and response uniformity.
-# Hospital Capacity and ICU Availability: South Korea may have better hospital capacity management, 
-#   whereas the U.S. faced periods of overwhelming demand, affecting death rates.
-# Public Health Interventions: South Korea’s strict public health interventions, such as mask mandates and quarantine measures, 
-#   may have contributed to fewer deaths relative to infections.
+  # Healthcare Infrastructure: South Korea has a robust healthcare system with universal coverage, 
+  #     while the U.S. has a more fragmented system with varying levels of access to healthcare.
+  # Pandemic Response: South Korea implemented aggressive testing, contact tracing, and isolation measures early on, 
+  #     whereas the U.S. faced challenges with testing capacity and response uniformity.
+  # Hospital Capacity and ICU Availability: South Korea may have better hospital capacity management, 
+  #     whereas the U.S. faced periods of overwhelming demand, affecting death rates.
+  # Public Health Interventions: South Korea’s strict public health interventions, such as mask mandates and quarantine measures, 
+  #     may have contributed to fewer deaths relative to infections.
 
 # Additional Factors
-# Population Density and Urbanization: South Korea's higher population density and urbanization might necessitate more hospital beds.
-# Healthcare Policies and Funding: Differences in policies, funding, and system organization can influence hospital bed availability.
-# Historical and Cultural Factors: South Korea's historical emphasis on public health and healthcare investments might lead to higher hospital bed availability.
+  # Population Density and Urbanization: South Korea's higher population density and urbanization might necessitate more hospital beds.
+  # Healthcare Policies and Funding: Differences in policies, funding, and system organization can influence hospital bed availability.
+  # Historical and Cultural Factors: South Korea's historical emphasis on public health and healthcare investments might lead to higher hospital bed availability.
 
