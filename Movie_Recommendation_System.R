@@ -1,3 +1,12 @@
+# Movie Recommendation System
+
+# This part of the project builds a movie recommendation system using the MovieLens dataset.
+# The analysis includes user-based and item-based collaborative filtering to recommend movies.
+
+# Libraries Used
+  # recommenderlab: For building and evaluating recommendation systems.
+  # ggplot2: For data visualization.
+
 # Install and load required packages
 # Uncomment and run if the packages are not already installed
 # install.packages(c("recommenderlab", "ggplot2", "Matrix", "data.table"))
@@ -57,17 +66,18 @@ print(ubcf_results)
 print("Item-based Collaborative Filtering (IBCF) Results:")
 print(ibcf_results)
 
-# Interpretation of accuracy results:
+# Interpretation of accuracy results
 
-# User-based Collaborative Filtering (UBCF):
-# RMSE (1.2196): Indicates the square root of the average squared differences between predicted and actual ratings. Lower RMSE values suggest better prediction accuracy.
-# MSE (1.4875): Represents the average squared differences between predicted and actual ratings. Lower MSE is better.
-# MAE (0.9540): Measures the average absolute differences between predicted and actual ratings. Lower MAE suggests better accuracy.
+# User-based Collaborative Filtering (UBCF)
+  # RMSE (1.2196): Indicates the square root of the average squared differences between predicted and actual ratings. Lower RMSE values suggest better prediction accuracy.
+  # MSE (1.4875): Represents the average squared differences between predicted and actual ratings. Lower MSE is better.
+  # MAE (0.9540): Measures the average absolute differences between predicted and actual ratings. Lower MAE suggests better accuracy.
 
-# Item-based Collaborative Filtering (IBCF):
-# RMSE (1.4466): Higher than UBCF, indicating larger deviations between predicted and actual ratings.
-# MSE (2.0927): Higher than UBCF, suggesting less accurate predictions.
-# MAE (1.0607): Also higher than UBCF, indicating larger average absolute error.
+# Item-based Collaborative Filtering (IBCF)
+  # RMSE (1.4466): Higher than UBCF, indicating larger deviations between predicted and actual ratings.
+  # MSE (2.0927): Higher than UBCF, suggesting less accurate predictions.
+  # MAE (1.0607): Also higher than UBCF, indicating larger average absolute error.
+
 # Summary: UBCF generally performs better than IBCF, suggesting that user-based filtering is more accurate in predicting ratings for this dataset.
 
 # Generate top recommendations for user 1
@@ -80,7 +90,7 @@ recommended_movies_list <- movies_df[movies_df$movieId %in% recommended_movie_id
 print("Recommended Movies for User 1")
 print(recommended_movies_list)
 
-# Interpretation of recommendations:
+# Interpretation of recommendations
 
 # Top Recommendations for User 1: Diverse set of recommendations suggesting movies based on user preferences.
 # Movie Details: Covers a range of genres and release dates, beneficial for users who appreciate variety.
@@ -91,7 +101,7 @@ ggplot(ratings, aes(x=rating)) +
   geom_histogram(binwidth=0.5, fill="blue", color="white") +
   labs(title="Rating Distribution", x="Rating", y="Count")
 
-# Interpretation of rating distribution:
+# Interpretation of rating distribution
 
 # Most Frequent Rating: 4
 # Second Most Frequent Rating: 3
