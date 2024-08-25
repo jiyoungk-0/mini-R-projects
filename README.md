@@ -2,7 +2,7 @@
 
 This repository contains a collection of small-scale projects implemented in R. Each project focuses on a specific aspect of data analysis or machine learning. Below is an overview of the two projects included in this repository.
 
-## Projects
+## 📁 Projects
 
 ### 1. COVID-19 Data Analysis: South Korea vs. United States
 
